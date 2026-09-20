@@ -3,805 +3,400 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The most frequently visited tourist attractions in Wałbrzych and its surroundings: Książ Castle, the Old Mine, the Palm House, Sobieski Park, the Porcelain Museum, Chełmiec Mountain. A complete visitor guide.">
-<meta name="keywords" content="Wałbrzych, attractions, Książ Castle, Old Mine, Palm House, Chełmiec, tourism, Lower Silesia, travel guide">
+<meta name="description" content="The most frequently visited tourist attractions in Wałbrzych and its surroundings: Książ Castle, the Old Mine, the Palm House, Sobieski Park, the Porcelain Museum, Chełmiec Mountain.">
+<meta name="keywords" content="Wałbrzych, attractions, Książ Castle, Old Mine, Palm House, Chełmiec, tourism, Lower Silesia">
 <meta name="author" content="Wałbrzych Attractions">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="[your-name.github.io](https://your-name.github.io/walbrzych/)">
-<meta name="theme-color" content="#0f3524">
+<link rel="canonical" href="[example.com](https://example.com/)">
 
-<!-- Open Graph -->
+<!-- Open Graph / social media -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Tourist Attractions of Wałbrzych — A Complete Guide">
-<meta property="og:description" content="Castle, mine, palm house, parks and peaks: a guide to the most frequently visited places in Wałbrzych.">
+<meta property="og:title" content="Tourist Attractions of Wałbrzych">
+<meta property="og:description" content="A guide to the most frequently visited places in Wałbrzych and its surroundings.">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary_large_image">
 
-<!-- Fonts -->
-<link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
-<link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-<link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap)" rel="stylesheet">
-
-<title>Wałbrzych Tourist Attractions — A Complete Guide</title>
+<title>Wąłbrzych Tourist Attractions — A Guide</title>
 
 <style>
   :root{
-    --bg:#f7f5ef;
+    --bg:#f4f1ea;
     --card:#ffffff;
-    --ink:#191e18;
-    --muted:#5b6357;
+    --ink:#20241f;
+    --muted:#5c6459;
     --accent:#1f6f4a;
-    --accent-deep:#124631;
-    --accent-2:#bd8235;
-    --accent-soft:#e4efe8;
-    --line:#e3ddd0;
-    --radius:22px;
-    --radius-sm:15px;
-    --shadow-sm:0 4px 18px rgba(25,30,24,.07);
-    --shadow:0 12px 38px rgba(25,30,24,.12);
-    --shadow-lg:0 28px 70px rgba(25,30,24,.20);
-    --maxw:1160px;
-    --font-display:"Fraunces",Georgia,serif;
-    --font-body:"Inter","Segoe UI",system-ui,sans-serif;
-  }
-
-  html[data-theme="dark"]{
-    --bg:#0e120e;
-    --card:#191f17;
-    --ink:#eef2ea;
-    --muted:#a3ab9d;
-    --accent:#84d3a8;
-    --accent-deep:#a6e3c1;
-    --accent-2:#e8c082;
-    --accent-soft:#20301e;
-    --line:#2b3526;
-    --shadow-sm:0 4px 18px rgba(0,0,0,.45);
-    --shadow:0 12px 38px rgba(0,0,0,.55);
-    --shadow-lg:0 28px 70px rgba(0,0,0,.65);
+    --accent-soft:#e3efe7;
+    --line:#dcd6c9;
+    --radius:14px;
+    --shadow:0 6px 24px rgba(32,36,31,.08);
   }
 
   *{box-sizing:border-box;}
+
   html{scroll-behavior:smooth;}
 
   body{
     margin:0;
-    font-family:var(--font-body);
-    line-height:1.72;
+    font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
     color:var(--ink);
     background:var(--bg);
-    transition:background .4s,color .4s;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
   }
 
-  h1,h2,h3,.display{font-family:var(--font-display);letter-spacing:-.022em;font-weight:700;}
   a{color:var(--accent);}
-  img{max-width:100%;display:block;}
-
-  /* ---------- Scroll progress ---------- */
-  #progress{
-    position:fixed;top:0;left:0;height:3px;width:0;
-    background:linear-gradient(90deg,var(--accent),var(--accent-2));
-    z-index:80;transition:width .08s linear;
-  }
 
   /* ---------- Header ---------- */
   header.hero{
-    position:relative;
-    min-height:82vh;
-    display:flex;flex-direction:column;justify-content:center;align-items:center;
-    text-align:center;
-    padding:120px 24px 100px;
+    background:linear-gradient(160deg,#1f6f4a 0%,#14472f 100%);
     color:#fff;
-    overflow:hidden;
-    background:#0d3323;
-  }
-
-  .hero-bg{
-    position:absolute;inset:-4%;
-    background:url("[images.unsplash.com](https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1920&q=70)") center/cover no-repeat;
-    transform:scale(1.08);
-    will-change:transform;
-    animation:heroPan 26s ease-in-out infinite alternate;
-  }
-
-  @keyframes heroPan{
-    from{transform:scale(1.08) translateY(0);}
-    to{transform:scale(1.16) translateY(-14px);}
-  }
-
-  header.hero::before{
-    content:"";position:absolute;inset:0;z-index:1;
-    background:
-      linear-gradient(180deg, rgba(9,32,21,.68) 0%, rgba(9,32,21,.82) 55%, rgba(6,24,15,.96) 100%),
-      radial-gradient(circle at 78% 22%, rgba(189,130,53,.30), transparent 46%);
-  }
-
-  header.hero::after{
-    content:"";position:absolute;inset:0;z-index:2;
-    background-image:repeating-linear-gradient(45deg, rgba(255,255,255,.028) 0 2px, transparent 2px 24px);
-    pointer-events:none;
-  }
-
-  .hero-inner{position:relative;z-index:3;max-width:860px;}
-
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:10px;
-    font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;
-    color:#bfe4cd;margin-bottom:22px;font-weight:600;
-  }
-
-  .eyebrow::before,.eyebrow::after{
-    content:"";width:26px;height:1px;background:rgba(191,228,205,.55);
+    padding:64px 24px 56px;
+    text-align:center;
   }
 
   header.hero h1{
-    margin:0 0 22px;
-    font-size:clamp(2.2rem,6.2vw,4.3rem);
-    line-height:1.06;
-    font-weight:700;
+    margin:0 0 12px;
+    font-size:clamp(1.6rem,4vw,2.6rem);
+    line-height:1.2;
   }
 
-  header.hero h1 em{
-    font-style:italic;font-weight:500;
-    background:linear-gradient(90deg,#f7e8cc,#c1873b);
-    -webkit-background-clip:text;background-clip:text;
-    -webkit-text-fill-color:transparent;
+  header.hero p{
+    margin:0 auto;
+    max-width:640px;
+    color:#d9ece1;
+    font-size:1.05rem;
   }
-
-  header.hero p.lead{
-    margin:0 auto 40px;max-width:640px;
-    color:#d9ece1;font-size:1.14rem;font-weight:400;
-  }
-
-  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
-
-  .btn{
-    display:inline-flex;align-items:center;gap:9px;
-    padding:14px 30px;border-radius:999px;
-    font-weight:600;font-size:.95rem;text-decoration:none;
-    transition:transform .25s cubic-bezier(.2,.7,.3,1),box-shadow .25s,background .25s;
-    cursor:pointer;border:none;
-  }
-
-  .btn-primary{background:#f7f5ef;color:#124631;box-shadow:0 12px 30px rgba(0,0,0,.3);}
-  .btn-primary:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(0,0,0,.4);}
-  .btn-ghost{border:1.5px solid rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.04);}
-  .btn-ghost:hover{background:rgba(255,255,255,.14);transform:translateY(-4px);}
-
-  .hero-stats{
-    position:relative;z-index:3;
-    display:flex;flex-wrap:wrap;gap:14px;justify-content:center;
-    margin-top:64px;
-  }
-
-  .stat{
-    min-width:150px;padding:20px 26px;
-    background:rgba(255,255,255,.07);
-    border:1px solid rgba(255,255,255,.16);
-    border-radius:var(--radius-sm);
-    backdrop-filter:blur(10px);
-  }
-
-  .stat strong{
-    display:block;font-family:var(--font-display);
-    font-size:2.3rem;color:#fff;line-height:1;
-  }
-
-  .stat span{
-    font-size:.74rem;color:#a9cbb6;
-    text-transform:uppercase;letter-spacing:.12em;
-  }
-
-  .scroll-hint{
-    position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
-    z-index:3;color:rgba(255,255,255,.6);font-size:.72rem;
-    letter-spacing:.18em;text-transform:uppercase;
-    display:flex;flex-direction:column;align-items:center;gap:8px;
-  }
-
-  .scroll-hint span{
-    width:1px;height:34px;background:linear-gradient(180deg,rgba(255,255,255,.6),transparent);
-    animation:hintPulse 1.8s ease-in-out infinite;
-  }
-
-  @keyframes hintPulse{0%,100%{opacity:.3;transform:scaleY(.7);}50%{opacity:1;transform:scaleY(1);}}
 
   /* ---------- Navigation ---------- */
   nav.toc{
-    position:sticky;top:0;z-index:60;
-    display:flex;align-items:center;justify-content:space-between;gap:16px;
-    padding:12px 26px;
-    background:color-mix(in srgb, var(--bg) 86%, transparent);
-    backdrop-filter:blur(16px);
+    position:sticky;
+    top:0;
+    z-index:10;
+    background:rgba(244,241,234,.95);
+    backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
-    transition:box-shadow .3s,padding .3s;
-  }
-
-  nav.toc.scrolled{box-shadow:var(--shadow-sm);padding-top:9px;padding-bottom:9px;}
-
-  .brand{
-    font-family:var(--font-display);font-weight:700;font-size:1.1rem;
-    white-space:nowrap;display:flex;align-items:center;gap:8px;
-  }
-
-  .brand::before{
-    content:"";width:10px;height:10px;border-radius:3px;
-    background:linear-gradient(135deg,var(--accent),var(--accent-2));
-    transform:rotate(45deg);
+    padding:10px 16px;
   }
 
   nav.toc ul{
-    display:flex;flex-wrap:wrap;gap:4px 8px;
-    justify-content:center;list-style:none;margin:0;padding:0;font-size:.88rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 14px;
+    justify-content:center;
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size:.92rem;
   }
 
   nav.toc a{
-    text-decoration:none;color:var(--muted);
-    padding:7px 13px;border-radius:11px;position:relative;
+    text-decoration:none;
+    color:var(--muted);
+    padding:4px 8px;
+    border-radius:8px;
     transition:background .2s,color .2s;
   }
 
-  nav.toc a:hover,nav.toc a:focus{background:var(--accent-soft);color:var(--accent);}
-  nav.toc a.active{background:var(--accent-soft);color:var(--accent);font-weight:600;}
-
-  .nav-actions{display:flex;gap:8px;align-items:center;}
-
-  #theme-toggle{
-    background:var(--accent-soft);color:var(--accent);
-    border:1px solid var(--line);border-radius:11px;
-    padding:8px 13px;font-size:.82rem;font-weight:600;
-    cursor:pointer;transition:transform .2s;
+  nav.toc a:hover,nav.toc a:focus{
+    background:var(--accent-soft);
+    color:var(--accent);
   }
-
-  #theme-toggle:hover{transform:scale(1.07);}
 
   /* ---------- Layout ---------- */
-  main{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
-
-  .section-head{text-align:center;margin:84px 0 42px;}
-
-  .section-head h2{font-size:clamp(1.6rem,3.6vw,2.4rem);margin:0 0 14px;}
-  .section-head p{margin:0 auto;max-width:640px;color:var(--muted);}
-
-  .kicker{
-    display:inline-block;font-size:.73rem;font-weight:700;
-    letter-spacing:.2em;text-transform:uppercase;
-    color:var(--accent-2);margin-bottom:12px;
+  main{
+    max-width:880px;
+    margin:0 auto;
+    padding:32px 20px 8px;
   }
 
-  /* ---------- Cards ---------- */
-  .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-    gap:28px;
-  }
-
-  article.place{
-    position:relative;
+  section.place{
     background:var(--card);
     border:1px solid var(--line);
     border-radius:var(--radius);
-    box-shadow:var(--shadow-sm);
-    overflow:hidden;
-    display:flex;flex-direction:column;
-    transition:transform .4s cubic-bezier(.2,.7,.3,1),box-shadow .4s;
+    box-shadow:var(--shadow);
+    padding:24px 26px;
+    margin-bottom:24px;
+    scroll-margin-top:70px;
   }
 
-  article.place:hover{
-    transform:translateY(-8px);
-    box-shadow:var(--shadow-lg);
+  section.place h2{
+    margin:0 0 4px;
+    font-size:1.35rem;
   }
 
-  .card-media{
-    height:196px;position:relative;overflow:hidden;
+  .badge{
+    display:inline-block;
+    font-size:.75rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
     background:var(--accent-soft);
+    color:var(--accent);
+    padding:3px 9px;
+    border-radius:999px;
+    margin-bottom:12px;
+    font-weight:600;
   }
 
-  .card-media img{
-    width:100%;height:100%;object-fit:cover;
-    transition:transform .6s cubic-bezier(.2,.7,.3,1);
+  section.place p{
+    margin:0 0 10px;
+    color:var(--muted);
   }
 
-  article.place:hover .card-media img{transform:scale(1.07);}
-
-  .card-media::after{
-    content:"";position:absolute;inset:0;
-    background:linear-gradient(180deg, rgba(9,32,21,0) 35%, rgba(9,32,21,.72) 100%);
+  section.place ul.facts{
+    margin:8px 0 0;
+    padding-left:20px;
+    color:var(--muted);
+    font-size:.95rem;
   }
 
-  .card-media .emoji{
-    position:absolute;top:16px;right:18px;z-index:2;
-    font-size:1.6rem;
-    filter:drop-shadow(0 3px 8px rgba(0,0,0,.4));
-  }
-
-  .card-media .badge{
-    position:absolute;left:16px;bottom:16px;z-index:2;
-    font-size:.68rem;font-weight:700;
-    letter-spacing:.1em;text-transform:uppercase;
-    color:#fff;
-    background:rgba(255,255,255,.16);
-    border:1px solid rgba(255,255,255,.32);
-    padding:5px 12px;border-radius:999px;
-    backdrop-filter:blur(6px);
-  }
-
-  .card-body{padding:24px 26px 26px;display:flex;flex-direction:column;flex:1;}
-
-  article.place h3{margin:0 0 11px;font-size:1.34rem;}
-
-  article.place p{margin:0 0 18px;color:var(--muted);font-size:.96rem;flex:1;}
-
-  .facts{
-    list-style:none;margin:0;padding:18px 0 0;
-    border-top:1px solid var(--line);
-    display:grid;gap:9px;font-size:.88rem;
-  }
-
-  .facts li{color:var(--muted);display:flex;gap:8px;}
-  .facts li::before{content:"›";color:var(--accent);font-weight:700;}
-  .facts strong{color:var(--ink);font-weight:600;}
-
-  /* ---------- Reveal ---------- */
-  .reveal{
-    opacity:0;transform:translateY(30px);
-    transition:opacity .8s cubic-bezier(.2,.7,.3,1),transform .8s cubic-bezier(.2,.7,.3,1);
-  }
-  .reveal.in{opacity:1;transform:none;}
-  .grid .reveal:nth-child(2){transition-delay:.08s;}
-  .grid .reveal:nth-child(3){transition-delay:.16s;}
-  .grid .reveal:nth-child(4){transition-delay:.08s;}
-  .grid .reveal:nth-child(5){transition-delay:.16s;}
-
-  /* ---------- Info panel ---------- */
+  /* ---------- Info section ---------- */
   aside.info{
-    position:relative;
-    background:linear-gradient(150deg,var(--accent-soft),color-mix(in srgb,var(--accent-soft) 55%, var(--bg)));
-    border:1px solid var(--line);
+    background:var(--accent-soft);
     border-radius:var(--radius);
-    padding:38px 40px;margin:84px 0 20px;
-    box-shadow:var(--shadow-sm);
-    overflow:hidden;
+    padding:22px 26px;
+    margin-bottom:24px;
+    border:1px solid #cde2d6;
   }
 
-  aside.info::before{
-    content:"";position:absolute;top:-40px;right:-40px;width:180px;height:180px;
-    border-radius:50%;background:radial-gradient(circle,rgba(189,130,53,.16),transparent 70%);
-  }
-
-  aside.info h2{margin:0 0 16px;font-size:1.6rem;}
-  .two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;}
+  aside.info h2{margin-top:0;}
 
   pre.tree{
-    background:var(--card);border:1px solid var(--line);
-    border-radius:var(--radius-sm);padding:17px 19px;
-    overflow-x:auto;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
-    font-size:.82rem;line-height:1.62;color:var(--ink);margin:0;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:14px 16px;
+    overflow-x:auto;
+    font-size:.85rem;
+    color:var(--ink);
   }
 
-  /* ---------- FAQ ---------- */
   .faq details{
-    background:var(--card);border:1px solid var(--line);
-    border-radius:var(--radius-sm);padding:19px 23px;margin-bottom:14px;
-    box-shadow:var(--shadow-sm);transition:box-shadow .25s,border-color .25s;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:14px 18px;
+    margin-bottom:12px;
   }
-
-  .faq details:hover{border-color:color-mix(in srgb,var(--accent) 40%, var(--line));}
-  .faq details[open]{box-shadow:var(--shadow);}
 
   .faq summary{
-    cursor:pointer;font-weight:600;font-size:1.02rem;
-    list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;
+    cursor:pointer;
+    font-weight:600;
   }
 
-  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::marker{color:var(--accent);}
 
-  .faq summary::after{
-    content:"+";color:var(--accent);font-size:1.4rem;line-height:1;
-    transition:transform .3s cubic-bezier(.2,.7,.3,1);flex:0 0 auto;
-  }
-
-  .faq details[open] summary::after{transform:rotate(135deg);}
-  .faq p{margin:15px 0 0;color:var(--muted);}
+  .faq p{margin:10px 0 0;color:var(--muted);}
 
   /* ---------- Table ---------- */
-  .table-wrap{
-    overflow-x:auto;margin:20px 0 40px;
-    border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:12px 0;
+    font-size:.92rem;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
   }
 
-  table{width:100%;border-collapse:collapse;font-size:.93rem;background:var(--card);}
-
-  th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);}
-
-  th{
-    background:var(--accent-soft);color:var(--accent);
-    font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;
+  th,td{
+    padding:10px 12px;
+    text-align:left;
+    border-bottom:1px solid var(--line);
   }
 
-  tbody tr{transition:background .2s;}
-  tbody tr:hover{background:color-mix(in srgb,var(--accent-soft) 55%, transparent);}
-  tr:last-child td{border-bottom:none;}
-
-  /* ---------- Timeline ---------- */
-  .timeline{list-style:none;position:relative;margin:26px 0 20px;padding:0 0 0 34px;}
-
-  .timeline::before{
-    content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;
-    background:linear-gradient(180deg,var(--accent),var(--accent-2));
-    border-radius:2px;
-  }
-
-  .timeline li{position:relative;padding:0 0 28px 28px;}
-  .timeline li:last-child{padding-bottom:0;}
-
-  .timeline li::before{
-    content:"";position:absolute;left:-34px;top:6px;
-    width:15px;height:15px;border-radius:50%;
-    background:var(--accent);
-    box-shadow:0 0 0 5px var(--bg), 0 0 0 7px var(--accent-soft);
-    transition:transform .3s;
-  }
-
-  .timeline li:hover::before{transform:scale(1.2);}
-
-  .timeline time{
-    display:block;font-weight:700;color:var(--accent);
-    font-size:.86rem;letter-spacing:.04em;font-family:var(--font-display);
-  }
-
-  .timeline span{color:var(--muted);font-size:.96rem;}
+  th{background:var(--accent-soft);color:var(--accent);}
 
   /* ---------- Footer ---------- */
   footer{
-    position:relative;
-    background:linear-gradient(165deg,#191e18,#0c100b);
-    color:#b9bfb5;text-align:center;
-    padding:76px 24px 50px;margin-top:96px;font-size:.9rem;
-    overflow:hidden;
+    background:#20241f;
+    color:#b9bfb5;
+    text-align:center;
+    padding:34px 20px;
+    margin-top:32px;
+    font-size:.9rem;
   }
 
-  footer::before{
-    content:"";position:absolute;top:0;left:0;right:0;height:1px;
-    background:linear-gradient(90deg,transparent,var(--accent),var(--accent-2),transparent);
-  }
-
-  footer .fbrand{
-    font-family:var(--font-display);font-size:1.5rem;
-    color:#fff;font-weight:700;margin:0 0 12px;
-  }
-
-  footer p{margin:8px 0;}
-  footer a{color:#8fd3b0;text-decoration:none;}
-  footer a:hover{text-decoration:underline;}
-
-  .foot-links{
-    display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:center;
-    margin:26px 0;font-size:.86rem;
-  }
-
-  /* ---------- Back to top ---------- */
-  #to-top{
-    position:fixed;right:24px;bottom:24px;z-index:70;
-    width:48px;height:48px;border-radius:50%;
-    border:1px solid var(--line);
-    background:var(--accent);color:#fff;
-    font-size:1.15rem;cursor:pointer;
-    box-shadow:var(--shadow);
-    opacity:0;pointer-events:none;transform:translateY(16px);
-    transition:opacity .3s,transform .3s,background .2s;
-    display:flex;align-items:center;justify-content:center;
-  }
-
-  #to-top.show{opacity:1;pointer-events:auto;transform:none;}
-  #to-top:hover{background:var(--accent-deep);transform:translateY(-3px);}
+  footer a{color:#8fd3b0;}
 
   /* ---------- Accessibility ---------- */
-  a:focus-visible,summary:focus-visible,button:focus-visible{
-    outline:3px solid var(--accent);outline-offset:3px;border-radius:8px;
-  }
-
-  @media (max-width:720px){
-    nav.toc .brand{display:none;}
-    nav.toc ul{gap:2px 3px;font-size:.8rem;}
-    nav.toc a{padding:6px 9px;}
-    header.hero{min-height:auto;padding:96px 20px 88px;}
-    .hero-stats{gap:12px;}
-    .stat{min-width:120px;padding:16px 20px;}
-    aside.info{padding:28px 24px;}
-    .scroll-hint{display:none;}
+  a:focus-visible,summary:focus-visible{
+    outline:3px solid var(--accent);
+    outline-offset:2px;
   }
 
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto;}
-    *{transition:none!important;animation:none!important;}
-    .reveal{opacity:1;transform:none;}
-    .hero-bg{animation:none;transform:scale(1.08);}
+    *{transition:none!important;}
   }
 </style>
 </head>
 
 <body>
 
-<div id="progress" aria-hidden="true"></div>
-
 <header class="hero">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <span class="eyebrow">Lower Silesia · Travel Guide</span>
-    <h1>Discover <em>Wałbrzych</em><br>and Its Surroundings</h1>
-    <p class="lead">Castle, mine, palm house, parks and peaks — a complete guide to
-       the places worth seeing in Wałbrzych and the surrounding area.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#attractions">Explore attractions →</a>
-      <a class="btn btn-ghost" href="#itinerary">One-day plan</a>
-    </div>
-  </div>
-  <div class="hero-stats">
-    <div class="stat"><strong data-count="6">0</strong><span>Key sites</span></div>
-    <div class="stat"><strong data-count="1">0</strong><span>Day to cover</span></div>
-    <div class="stat"><strong data-count="365">0</strong><span>Days a year</span></div>
-  </div>
-  <div class="scroll-hint" aria-hidden="true">Scroll<span></span></div>
+  <h1>The Most Frequently Visited Attractions in Wałbrzych</h1>
+  <p>Castle, mine, palm house, parks and peaks — a practical guide to the places
+     worth seeing in Wałbrzych and the surrounding area.</p>
 </header>
 
 <nav class="toc" aria-label="Table of contents">
-  <span class="brand">Wałbrzych</span>
   <ul>
-    <li><a href="#attractions">Attractions</a></li>
-    <li><a href="#distances">Distances</a></li>
-    <li><a href="#itinerary">Plan</a></li>
+    <li><a href="#ksiaz">Książ Castle</a></li>
+    <li><a href="#mine">Old Mine</a></li>
+    <li><a href="#palmhouse">Palm House</a></li>
+    <li><a href="#park">Sobieski Park</a></li>
+    <li><a href="#museum">Porcelain Museum</a></li>
+    <li><a href="#chelmiec">Chełmiec</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#summary">Summary</a></li>
   </ul>
-  <div class="nav-actions">
-    <button id="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
-  </div>
 </nav>
 
 <main>
 
-  <div class="section-head reveal" id="attractions">
-    <span class="kicker">Must-see places</span>
-    <h2>Places worth seeing</h2>
-    <p>Six of the most frequently visited attractions in Wałbrzych and its
-       immediate surroundings — from a grand castle to a mountain peak.</p>
-  </div>
+  <section class="place" id="ksiaz">
+    <span class="badge">Castle &amp; park</span>
+    <h2>Książ Castle</h2>
+    <p>One of the largest castles in Poland and the symbol of the region. A majestic
+       residence surrounded by terraces, gardens and an extensive park, crossed by
+       walking trails above the Pełcznica gorge.</p>
+    <p>The tour covers the grand halls and chambers, while seasonal exhibitions and
+       the underground route draw visitors all year round. The ruins of the Old Książ
+       castle lie right next door.</p>
+    <ul class="facts">
+      <li><strong>Must-see:</strong> the Maximilian Hall, the viewing terrace, the gardens and the Palm House.</li>
+      <li><strong>Good to know:</strong> it is one of the largest structures of its kind in the country.</li>
+      <li><strong>Best for:</strong> families, history and architecture enthusiasts.</li>
+    </ul>
+  </section>
 
-  <div class="grid">
+  <section class="place" id="mine">
+    <span class="badge">Museum &amp; technology</span>
+    <h2>Old Mine</h2>
+    <p>A science and art centre built on the site of the former "Julia" coal mine.
+       It is the largest post-mining institution of its kind in Poland — combining
+       the history of mining with a modern exhibition space.</p>
+    <p>Visitors learn about the history of coal extraction, descend into the
+       underground corridors, and see historic mining machinery and equipment.
+       The site also has a lively cultural calendar of concerts and exhibitions.</p>
+    <ul class="facts">
+      <li><strong>Must-see:</strong> the underground route, the winding tower and the machinery display.</li>
+      <li><strong>Good to know:</strong> some routes require advance booking.</li>
+      <li><strong>Best for:</strong> children, teenagers and technology fans.</li>
+    </ul>
+  </section>
 
-    <article class="place reveal">
-      <div class="card-media">
-        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1520637836862-4d197d17c50a?auto=format&fit=crop&w=800&q=70)" alt="Książ Castle surrounded by gardens" loading="lazy">
-        <span class="emoji">🏰</span>
-        <span class="badge">Castle &amp; park</span>
-      </div>
-      <div class="card-body">
-        <h3>Książ Castle</h3>
-        <p>One of the largest castles in Poland and the symbol of the region. A majestic
-           residence surrounded by terraces, gardens and an extensive park, crossed by
-           walking trails above the Pełcznica gorge. Seasonal exhibitions and the
-           underground route draw visitors all year round.</p>
-        <ul class="facts">
-          <li><strong>Must-see:</strong>&nbsp;the Maximilian Hall and the gardens.</li>
-          <li><strong>Good to know:</strong>&nbsp;the Old Książ ruins are next door.</li>
-          <li><strong>Best for:</strong>&nbsp;families and architecture fans.</li>
-        </ul>
-      </div>
-    </article>
+  <section class="place" id="palmhouse">
+    <span class="badge">Gardens</span>
+    <h2>Wałbrzych Palm House</h2>
+    <p>Set in the historic complex near Książ Castle — one of the most interesting
+       collections of exotic plants in Lower Silesia. Palm trees, cacti, citrus plants
+       and many other species grow inside the glass pavilions.</p>
+    <p>It is a great place for a walk outside the main season too — the warm interiors
+       stay green even in winter, and the stables and park are just a short stroll away.</p>
+    <ul class="facts">
+      <li><strong>Must-see:</strong> the tall palms, the succulent collection and exotic flowers.</li>
+      <li><strong>Good to know:</strong> easy to combine with a visit to the castle.</li>
+      <li><strong>Best for:</strong> walkers and botany lovers.</li>
+    </ul>
+  </section>
 
-    <article class="place reveal">
-      <div class="card-media">
-        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=70)" alt="Historic mining machinery in a museum" loading="lazy">
-        <span class="emoji">⛏️</span>
-        <span class="badge">Museum &amp; technology</span>
-      </div>
-      <div class="card-body">
-        <h3>Old Mine</h3>
-        <p>A science and art centre built on the site of the former "Julia" coal mine —
-           the largest post-mining institution of its kind in Poland. Visitors descend
-           into underground corridors and see historic machinery, while concerts and
-           temporary exhibitions keep the site lively.</p>
-        <ul class="facts">
-          <li><strong>Must-see:</strong>&nbsp;the underground route and winding tower.</li>
-          <li><strong>Good to know:</strong>&nbsp;some routes need advance booking.</li>
-          <li><strong>Best for:</strong>&nbsp;teenagers and technology fans.</li>
-        </ul>
-      </div>
-    </article>
+  <section class="place" id="park">
+    <span class="badge">Park &amp; views</span>
+    <h2>Jan III Sobieski Park</h2>
+    <p>A popular spot for walks and relaxation in the very centre of Wałbrzych.
+       From the park's paths you can admire the panorama of the city and the
+       surrounding hills.</p>
+    <p>It is a starting point for many walks — trails leading toward the hills are
+       close by, and the park itself is eagerly visited by locals and tourists alike
+       in every season.</p>
+    <ul class="facts">
+      <li><strong>Must-see:</strong> the viewpoint over the city and the Wałbrzych Hills.</li>
+      <li><strong>Good to know:</strong> a great place for a short break along the way.</li>
+      <li><strong>Best for:</strong> families with children and anyone seeking relaxation.</li>
+    </ul>
+  </section>
 
-    <article class="place reveal">
-      <div class="card-media">
-        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=70)" alt="Exotic palms inside a glass palm house" loading="lazy">
-        <span class="emoji">🌴</span>
-        <span class="badge">Gardens</span>
-      </div>
-      <div class="card-body">
-        <h3>Wałbrzych Palm House</h3>
-        <p>Set in the historic complex near Książ Castle — one of the most interesting
-           collections of exotic plants in Lower Silesia. Palm trees, cacti and citrus
-           plants grow inside the glass pavilions, and the warm interiors stay green
-           even in winter.</p>
-        <ul class="facts">
-          <li><strong>Must-see:</strong>&nbsp;the tall palms and succulents.</li>
-          <li><strong>Good to know:</strong>&nbsp;easy to combine with the castle.</li>
-          <li><strong>Best for:</strong>&nbsp;walkers and botany lovers.</li>
-        </ul>
-      </div>
-    </article>
+  <section class="place" id="museum">
+    <span class="badge">Museum</span>
+    <h2>Porcelain Museum</h2>
+    <p>A museum presenting rich porcelain collections and the history of the
+       Wałbrzych region, closely tied to the local ceramics industry.</p>
+    <p>The exhibitions show both historic vessels and figurines as well as the process
+       of making porcelain. It is an interesting stop for anyone wanting to better
+       understand the city's industrial identity.</p>
+    <ul class="facts">
+      <li><strong>Must-see:</strong> the decorated and everyday porcelain collections.</li>
+      <li><strong>Good to know:</strong> the museum is housed in a historic palace.</li>
+      <li><strong>Best for:</strong> lovers of craft and industrial history.</li>
+    </ul>
+  </section>
 
-    <article class="place reveal">
-      <div class="card-media">
-        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=70)" alt="Forest park with walking paths" loading="lazy">
-        <span class="emoji">🌳</span>
-        <span class="badge">Park &amp; views</span>
-      </div>
-      <div class="card-body">
-        <h3>Jan III Sobieski Park</h3>
-        <p>A popular spot for walks and relaxation in the very centre of Wałbrzych.
-           From the park's paths you can admire the panorama of the city and the
-           surrounding hills, and it is a natural starting point for longer walks.</p>
-        <ul class="facts">
-          <li><strong>Must-see:</strong>&nbsp;the viewpoint over the city.</li>
-          <li><strong>Good to know:</strong>&nbsp;ideal for a short break.</li>
-          <li><strong>Best for:</strong>&nbsp;families and quiet relaxation.</li>
-        </ul>
-      </div>
-    </article>
+  <section class="place" id="chelmiec">
+    <span class="badge">Peak &amp; trails</span>
+    <h2>Chełmiec Mountain</h2>
+    <p>One of the characteristic peaks near Wałbrzych and a popular destination for
+       hiking trips. At the summit you will find a viewing tower and a historic chapel.</p>
+    <p>The trails up Chełmiec lead through forests, and from the top there is a broad
+       panorama over Wałbrzych and the surrounding mountain ranges. A good idea for
+       an active day outdoors.</p>
+    <ul class="facts">
+      <li><strong>Must-see:</strong> the viewing tower and the panorama of the Wałbrzych Hills.</li>
+      <li><strong>Good to know:</strong> bring comfortable shoes and water.</li>
+      <li><strong>Best for:</strong> hikers and those who enjoy active leisure.</li>
+    </ul>
+  </section>
 
-    <article class="place reveal">
-      <div class="card-media">
-        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=70)" alt="Handcrafted porcelain vessels on display" loading="lazy">
-        <span class="emoji">🏺</span>
-        <span class="badge">Museum</span>
-      </div>
-      <div class="card-body">
-        <h3>Porcelain Museum</h3>
-        <p>A museum presenting rich porcelain collections and the history of the
-           Wałbrzych region, tied to the local ceramics industry. The exhibitions show
-           historic vessels and figurines as well as the process of making porcelain.</p>
-        <ul class="facts">
-          <li><strong>Must-see:</strong>&nbsp;the decorated porcelain collections.</li>
-          <li><strong>Good to know:</strong>&nbsp;housed in a historic palace.</li>
-          <li><strong>Best for:</strong>&nbsp;lovers of craft and history.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="place reveal">
-      <div class="card-media">
-        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=800&q=70)" alt="Mountain peak with a viewing tower at sunset" loading="lazy">
-        <span class="emoji">⛰️</span>
-        <span class="badge">Peak &amp; trails</span>
-      </div>
-      <div class="card-body">
-        <h3>Chełmiec Mountain</h3>
-        <p>One of the characteristic peaks near Wałbrzych and a popular destination for
-           hiking trips. At the summit you will find a viewing tower and a historic
-           chapel, and a broad panorama over the city and the surrounding ranges.</p>
-        <ul class="facts">
-          <li><strong>Must-see:</strong>&nbsp;the viewing tower and the panorama.</li>
-          <li><strong>Good to know:</strong>&nbsp;bring solid shoes and water.</li>
-          <li><strong>Best for:</strong>&nbsp;hikers and active leisure.</li>
-        </ul>
-      </div>
-    </article>
-
-  </div>
-
-  <div class="section-head reveal" id="distances">
-    <span class="kicker">Getting around</span>
-    <h2>Distances and times</h2>
-    <p>Approximate travel times between the main attractions — useful when planning
-       a route by car or on foot.</p>
-  </div>
-
-  <div class="table-wrap reveal">
-    <table>
-      <caption style="text-align:left;padding:15px 18px;color:var(--muted);font-size:.88rem;caption-side:top;">
-        Approximate distances between the attractions
-      </caption>
-      <thead>
-        <tr><th>From → To</th><th>Distance</th><th>Travel time</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Książ Castle → Palm House</td><td>~1 km</td><td>~15 min on foot</td></tr>
-        <tr><td>Książ Castle → Old Mine</td><td>~7 km</td><td>~15 min by car</td></tr>
-        <tr><td>Old Mine → Porcelain Museum</td><td>~3 km</td><td>~20 min on foot</td></tr>
-        <tr><td>Porcelain Museum → Sobieski Park</td><td>~1.5 km</td><td>~20 min on foot</td></tr>
-        <tr><td>Sobieski Park → Chełmiec trailhead</td><td>~4 km</td><td>~10 min by car</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="section-head reveal" id="itinerary">
-    <span class="kicker">Plan your day</span>
-    <h2>A suggested one-day itinerary</h2>
-    <p>If you have only one day, this order lets you cover the highlights without
-       rushing.</p>
-  </div>
-
-  <ol class="timeline reveal">
-    <li><time>09:00</time><span>Start at <strong>Książ Castle</strong> — the tour and gardens.</span></li>
-    <li><time>11:30</time><span>A short walk to the <strong>Palm House</strong> and the stables area.</span></li>
-    <li><time>13:00</time><span>Lunch in the city centre.</span></li>
-    <li><time>14:00</time><span><strong>Old Mine</strong> — the underground route and machinery.</span></li>
-    <li><time>16:30</time><span><strong>Porcelain Museum</strong> and a stroll through <strong>Sobieski Park</strong>.</span></li>
-    <li><time>18:00</time><span>Sunset hike up <strong>Chełmiec</strong> if time and energy allow.</span></li>
-  </ol>
-
-  <aside class="info reveal">
+  <aside class="info">
     <h2>Graphics on the page (SVG)</h2>
-    <div class="two-col">
-      <div>
-        <p>There are two common ways to place SVG files on a website:</p>
-        <ol>
-          <li><strong>Directly in the HTML</strong> — part of the document, controllable with CSS and JavaScript.</li>
-          <li><strong>As an external file</strong> — loaded with an <code>&lt;img&gt;</code> tag or as a <code>background-image</code>.</li>
-        </ol>
-      </div>
-      <div>
-        <p>An example project structure:</p>
-        <pre class="tree">project/
+    <p>There are two common ways to place SVG files on a website:</p>
+    <ol>
+      <li><strong>Directly in the HTML</strong> — the graphic becomes part of the document and can be controlled with CSS and JavaScript.</li>
+      <li><strong>As an external file</strong> — loaded with an <code>&lt;img&gt;</code> tag or as a <code>background-image</code>.</li>
+    </ol>
+    <p>An example project structure with an external SVG file:</p>
+    <pre class="tree">project/
 ├── index.html
 ├── style.css
 └── images/
     └── chelmiec.svg</pre>
-        <p style="margin:12px 0 0;">Reference in HTML:</p>
-        <pre class="tree">&lt;img src="images/chelmiec.svg"
-     alt="Panorama of Chełmiec"
-     width="400"&gt;</pre>
-      </div>
-    </div>
+    <p>The reference in HTML then looks like this:</p>
+    <pre class="tree">&lt;img src="images/chelmiec.svg" alt="Panorama of Chełmiec" width="400"&gt;</pre>
   </aside>
 
-  <div class="section-head reveal" id="faq">
-    <span class="kicker">Good to know</span>
+  <section class="faq" id="faq">
     <h2>Frequently Asked Questions</h2>
-  </div>
 
-  <section class="faq reveal">
     <details>
       <summary>How much time do I need to tour Książ Castle?</summary>
       <p>Usually 2 to 3 hours — longer if you plan to stroll through the gardens,
          visit the Palm House, and walk toward the Old Książ ruins.</p>
     </details>
+
     <details>
       <summary>Is the Old Mine suitable for children?</summary>
       <p>Yes, the site is set up for family visits. Some underground routes are worth
          booking in advance — it is best to check the venue's current schedule online.</p>
     </details>
+
     <details>
       <summary>How do I get to Chełmiec?</summary>
       <p>The easiest way is by car to the trailhead, then on foot. The routes are
          marked, but sturdy footwear is recommended.</p>
     </details>
+
     <details>
       <summary>Are the attractions open all year round?</summary>
       <p>The castle, the Old Mine and the museums operate year-round, though opening
          hours change seasonally. The parks, the Palm House interior and the trails
          are accessible regardless of the weather, but it is worth checking any notices.</p>
     </details>
-    <details>
-      <summary>Do I need a car to see everything?</summary>
-      <p>Not strictly — the castle, Palm House, museums and the centrally located park
-         are reachable on foot or by public transport. For Chełmiec and the Old Mine,
-         a car or a taxi is more convenient.</p>
-    </details>
   </section>
 
-  <div class="section-head reveal" id="summary">
-    <span class="kicker">In short</span>
+  <section class="place" id="summary">
     <h2>Summary</h2>
     <p>Wałbrzych and its surroundings offer a wide range of tourist attractions.
        Visitors can explore historic buildings, learn about the history of the region,
        admire nature, and spend their free time actively — in any season.</p>
-  </div>
-
-  <div class="table-wrap reveal">
     <table>
-      <caption style="text-align:left;padding:15px 18px;color:var(--muted);font-size:.88rem;caption-side:top;">
+      <caption style="text-align:left;padding-bottom:8px;color:var(--muted);font-size:.9rem;">
         Quick comparison of the attractions
       </caption>
       <thead>
@@ -816,132 +411,14 @@
         <tr><td>Chełmiec</td><td>Peak &amp; trails</td><td>Active recreation</td></tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
 </main>
 
 <footer>
-  <p class="fbrand">Wałbrzych Tourist Attractions</p>
-  <p>An informational guide to the most frequently visited places in the region.</p>
-  <div class="foot-links">
-    <a href="#attractions">Attractions</a>
-    <a href="#distances">Distances</a>
-    <a href="#itinerary">One-day plan</a>
-    <a href="#faq">FAQ</a>
-  </div>
-  <p style="opacity:.6;">Opening hours and ticket prices are best checked on the venues' official websites.</p>
+  <p><strong>Wąłbrzych Tourist Attractions</strong> — an informational guide.</p>
+  <p>Opening hours and ticket prices are best checked on the venues' official websites.</p>
 </footer>
-
-<button id="to-top" type="button" aria-label="Back to top">↑</button>
-
-<script>
-  // Theme toggle with remembered preference
-  (function () {
-    var root = document.documentElement;
-    var btn = document.getElementById('theme-toggle');
-    var saved = localStorage.getItem('walbrzych-theme');
-
-    function apply(theme) {
-      if (theme === 'dark') {
-        root.setAttribute('data-theme', 'dark');
-        btn.textContent = '☀️';
-      } else {
-        root.removeAttribute('data-theme');
-        btn.textContent = '🌙';
-      }
-    }
-    apply(saved || 'light');
-
-    btn.addEventListener('click', function () {
-      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('walbrzych-theme', next);
-      apply(next);
-    });
-  })();
-
-  // Scroll progress + nav shadow + back-to-top
-  (function () {
-    var bar = document.getElementById('progress');
-    var nav = document.querySelector('nav.toc');
-    var top = document.getElementById('to-top');
-
-    function onScroll() {
-      var h = document.documentElement;
-      var max = h.scrollHeight - h.clientHeight;
-      bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
-      nav.classList.toggle('scrolled', h.scrollTop > 12);
-      top.classList.toggle('show', h.scrollTop > 640);
-    }
-    document.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    onScroll();
-
-    top.addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  })();
-
-  // Reveal-on-scroll
-  (function () {
-    var items = document.querySelectorAll('.reveal');
-    if (!('IntersectionObserver' in window)) {
-      items.forEach(function (el) { el.classList.add('in'); });
-      return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
-    items.forEach(function (el) { io.observe(el); });
-  })();
-
-  // Animated stat counters
-  (function () {
-    var stats = document.querySelectorAll('.stat strong[data-count]');
-    if (!('IntersectionObserver' in window)) {
-      stats.forEach(function (el) { el.textContent = el.dataset.count; });
-      return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (!e.isIntersecting) return;
-        var el = e.target, target = parseInt(el.dataset.count, 10), t0 = null;
-        function step(ts) {
-          if (!t0) t0 = ts;
-          var p = Math.min((ts - t0) / 1200, 1);
-          var eased = 1 - Math.pow(1 - p, 3);
-          el.textContent = Math.round(target * eased);
-          if (p < 1) requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-        io.unobserve(el);
-      });
-    }, { threshold: 0.5 });
-    stats.forEach(function (el) { io.observe(el); });
-  })();
-
-  // Active nav link while scrolling
-  (function () {
-    var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a[href^="#"]'));
-    var map = {};
-    links.forEach(function (l) { map[l.getAttribute('href').slice(1)] = l; });
-    var sections = Object.keys(map).map(function (id) { return document.getElementById(id); }).filter(Boolean);
-    if (!('IntersectionObserver' in window) || !sections.length) return;
-
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        var link = map[e.target.id];
-        if (!link) return;
-        if (e.isIntersecting) {
-          links.forEach(function (l) { l.classList.remove('active'); });
-          link.classList.add('active');
-        }
-      });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    sections.forEach(function (s) { io.observe(s); });
-  })();
-</script>
 
 </body>
 </html>
